@@ -1,0 +1,23 @@
+
+//to find target integer in array
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {23,45,1,2,8,19,-3,16,-11,28};
+        int target = 19;
+        System.out.println(linearSeach(array,target));
+    }static  int linearSeach(int[] array, int target){
+        if (array.length==0){
+            return -1;
+        }
+        for (int ind=0;ind< array.length;ind++){
+            int element = array[ind];
+            if (target==element){
+                return ind;
+            }
+        }
+        return -1;
+
+    }
+
+
+}
