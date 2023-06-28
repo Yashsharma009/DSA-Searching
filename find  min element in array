@@ -1,0 +1,15 @@
+public class findmin {
+    public static void main(String[] args) {
+        int[] array = {18,12,-7,3,14,28};
+        System.out.println(min(array));
+
+    }static int min(int[] array){
+        int ans = array[0];
+        for (int i=0;i<array.length;i++){
+            if (array[i]<ans){
+                ans=array[i];
+            }
+        }
+        return ans;
+    }
+}
